@@ -1,0 +1,497 @@
+[   
+    {
+        "model": "items.item",
+        "pk": 1,
+        "fields": {
+          "name": "Guitar"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 2,
+        "fields": {
+          "name": "Accordian"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 3,
+        "fields": {
+          "name": "Air horn"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 4,
+        "fields": {
+          "name": "Baby grand piano"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 5,
+        "fields": {
+          "name": "Bagpipe"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 6,
+        "fields": {
+          "name": "Banjo"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 7,
+        "fields": {
+          "name": "Bass guitar"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 8,
+        "fields": {
+          "name": "Bassoon"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 9,
+        "fields": {
+          "name": "Bugle"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 10,
+        "fields": {
+          "name": "Calliope"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 11,
+        "fields": {
+          "name": "Cello"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 12,
+        "fields": {
+          "name": "Clarinet"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 13,
+        "fields": {
+          "name": "Clavichord"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 14,
+        "fields": {
+          "name": "Concertina"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 15,
+        "fields": {
+          "name": "Didgeridoo"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 16,
+        "fields": {
+          "name": "Dobro"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 17,
+        "fields": {
+          "name": "Dulcimer"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 18,
+        "fields": {
+          "name": "Fiddle"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 19,
+        "fields": {
+          "name": "Fife"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 20,
+        "fields": {
+          "name": "Flugelhorn"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 21,
+        "fields": {
+          "name": "Flute"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 22,
+        "fields": {
+          "name": "French horn"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 23,
+        "fields": {
+          "name": "Glockenspiel"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 24,
+        "fields": {
+          "name": "Grand piano"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 26,
+        "fields": {
+          "name": "Harmonica"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 27,
+        "fields": {
+          "name": "Harp"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 28,
+        "fields": {
+          "name": "Harpsichord"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 29,
+        "fields": {
+          "name": "Hurdy-gurdy"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 30,
+        "fields": {
+          "name": "Kazoo"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 31,
+        "fields": {
+          "name": "Kick drum"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 32,
+        "fields": {
+          "name": "Lute"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 33,
+        "fields": {
+          "name": "Lyre"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 34,
+        "fields": {
+          "name": "Mandolin"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 35,
+        "fields": {
+          "name": "Marimba"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 36,
+        "fields": {
+          "name": "Mellotran"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 37,
+        "fields": {
+          "name": "Melodica"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 38,
+        "fields": {
+          "name": "Oboe"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 39,
+        "fields": {
+          "name": "Pan flute"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 40,
+        "fields": {
+          "name": "Piano"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 41,
+        "fields": {
+          "name": "Piccolo"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 42,
+        "fields": {
+          "name": "Pipe organ"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 43,
+        "fields": {
+          "name": "Saxaphone"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 44,
+        "fields": {
+          "name": "Sitar"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 45,
+        "fields": {
+          "name": "Sousaphone"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 46,
+        "fields": {
+          "name": "Tambourine"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 47,
+        "fields": {
+          "name": "Theremin"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 48,
+        "fields": {
+          "name": "Trombone"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 49,
+        "fields": {
+          "name": "Tuba"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 50,
+        "fields": {
+          "name": "Ukulele"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 51,
+        "fields": {
+          "name": "Viola"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 52,
+        "fields": {
+          "name": "Violin"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 53,
+        "fields": {
+          "name": "Vuvuzela"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 54,
+        "fields": {
+          "name": "Washtub bass"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 55,
+        "fields": {
+          "name": "Xylophone"
+        }
+      },
+      {
+        "model": "items.item",
+        "pk": 56,
+        "fields": {
+          "name": "Zither"
+        }
+      },
+    {
+      "model": "bands.band",
+      "pk": 1,
+      "fields": {
+        "name": "Led Zeppelin",
+        "img_url": "http://static.thetoptens.com/img/lists/335.jpg",
+        "info": "Led Zeppelin were an English rock band formed in London in 1968. The group consisted of Robert Plant (Vocal), Jimmy Page (Guitar), John Paul Jones (Bass, Keyboard) and John Bonham (Drums). The band's heavy, guitar-driven sound, rooted in blues and psychedelia on their early albums, has earned them recognition as one of the progenitors of heavy metal. They achieved significant commercial success with albums such as Led Zeppelin (1969), Led Zeppelin II (1969), Led Zeppelin III (1970), Led Zeppelin IV (1971), Houses of the Holy (1973), and Physical Graffiti (1975). Their song ‘Stairway to Heaven’ is among the most popular and influential rock music of all time.Led Zeppelin are widely considered one of the most successful, innovative, and influential rock groups in history.They are one of the best - selling music artists in the history of audio recording;various sources estimate the group 's record sales at 200 to 300 million units worldwide. With RIAA-certified sales of 111.5 million units, they are the second-best-selling band in the United States. They were inducted into the Rock Hall of Fame in 1995.",
+        "items": [51,47,38,14,6,2,14,8,5]
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 2,
+      "fields": {
+        "name": "The Beatles",
+        "img_url": "http://static.thetoptens.com/img/lists/6272.jpg",
+        "info": "The Beatles were an English rock band formed in Liverpool in 1960. The members consisted of John Lennon, Paul McCartney, George Harrison and Ringo Starr. They were soon known as the foremost and most influential act of rock era. Rooted in skiffle, beat, and 1950s rock and roll, the Beatles later experimented with several genres, ranging from pop ballads and Indian music to psychedelia and hard rock, often incorporating classical elements in innovative ways.The Beatles produced what many consider their finest material, from 1965 onwards including the innovative and widely influential albums Rubber Soul(1965), Revolver(1966), Sgt.Pepper 's Lonely Hearts Club Band (1967), The Beatles (commonly known as the White Album, 1968) and Abbey Road (1969).According to the RIAA, the Beatles are the best - selling music artists in the United States, with 178 million certified units.They have received ten Grammy Awards, an Academy Award for Best Original Song Score and fifteen Ivor Novello Awards.They were inducted into the Rock and Roll and Roll Hall of Fame in 1988. ",
+        "items": [56,55,41,46,39,31,24,17,9]
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 3,
+      "fields": {
+        "name": "Pink Floyd",
+        "img_url": "http://static.thetoptens.com/img/lists/337lg.jpg",
+        "info": "Pink Floyd were an English rock band formed in London. They achieved international acclaim with their progressive and psychedelic music. The band consisted of 5 members - David Gilmour, Syd Barrett, Nick Mason, Roger Waters, and Richard Wright.Their critically and commercially successful albums are The Dark Side of the Moon(1973), Wish You Were Here(1975), Animals(1977), The Wall(1979) and The Final Cut(1983).The Dark Side of the Moon is also considered as one of the best albums of all time.Pink Floyd were inducted into the Rock and Roll Hall of Fame in 1996. ",
+        "items": [4,8,15,18,24,29,34,42]
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 4,
+      "fields": {
+        "name": "Queen",
+        "img_url": "http://static.thetoptens.com/img/lists/587lg.jpg",
+        "info": "Queen are a British rock group formed in 1970. Members were Freddie Mercury (Vocals and Piano), Brian May (Guitar, Vocals), Roger Taylor (Drums, Vocals), and John Deacon (Bass Guitar, Vocals). Before forming into Queen, Brian May and Roger Taylor had played together in a band named Smile. Freddie Mercury was a fan of Smile and encouraged them to experiment with more elaborate stage and recording techniques. He then joined the band in 1970, suggested 'Queen ' as a new band name, and adopted his familiar stage name. John Deacon was also recruited to complete the line-up.Their release of the album 'A Night at the Opera' in 1975, brought them international success.They entered the mainstream with the album 's track 'Bohemian Rhapsody', which stayed at number one in the UK for nine weeks and popularised the music video. Their 1977 album, News of the World, contained 'We Will Rock You' and 'We Are the Champions', which also have become anthems at sporting events. In 1991, while embracing their success and their fans, Mercury died of bronchopneumonia, an AIDS-related disease. Deacon then retired in 1997. After that, both Brian May and Roger Taylor returned to the state of Smile band, although they kept the 'Queen' name. ",
+        "items": [4,9,12,17,19,2,5,28]
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 5,
+      "fields": {
+        "name": "Metallica",
+        "img_url": "http://static.thetoptens.com/img/lists/1710lg.jpg",
+        "info": "Metallica is an American Heavy Metal band formed in 1981. The original lineup was James Hetfield (Vocalist and Rhythm guitarist) Dave Mustaine (Lead Guitar) Lars Ulrich (Drums) Ron McGovney (Bassist) The group came into mainstream from their Self-Titled album and the hit single 'Enter Sandman '.With their first two albums, Kill 'Em All and Ride The Lightning reaching underground success, their third effort, Master of Puppets has since become one of the most important heavy metal albums ever, as it became the first thrash metal album to be certified platinum. The title track has since become the band's most played song live.On September 27, 1986, bass player Cliff Burton was killed after he was thrown out of the window and crushed to death.Metallica released their first music video in 1989. The song was One from their 1988 album, ...And Justice For All.The song received heavy critical acclaim and has since become their most played song from the album.The album also saw the debut of new bassist, Jason Newsted.Their fifth album, Metallica(also known as the Black Album), took more of a mainstream approach and has since become one of the best selling albums in America, certified 16 x Platinum.The album spawned five singles, Enter Sandman, The Unforgiven, Nothing Else Matters, Wherever I May Roam and Sad But True.",
+        "items": [24,44,55,7,42,41,54]
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 6,
+      "fields": {
+        "name": "AC/DC",
+        "img_url": "http://static.thetoptens.com/img/lists/1712lg.jpg",
+        "info": "AC/DC are an Australian hard rock band, formed in November 1973 by brothers Malcolm and Angus Young, who continued as members until Malcolm's illness and departure in 2014. Commonly referred to as a hard rock or blues rock band, they are also considered pioneers of heavy metal.",
+        "items": []
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 7,
+      "fields": {
+        "name": "The Rolling Stones",
+        "img_url": "http://static.thetoptens.com/img/lists/331lg.jpg",
+        "info": "The Rolling Stones are an English rock band formed in London in 1962. The first settled line-up consisted of Brian Jones (guitar, harmonica), Ian Stewart (piano), Mick Jagger (lead vocals, harmonica), Keith Richards (guitar), Bill Wyman (bass) and Charlie Watts (drums).Their best works include songs like Paint it Black , Sympathy for the Devil, Satisfication(Which ranked no.2 in The Rolling Stones Magazine’ s best songs of all time list).The Rolling Stones were inducted into the Rock and Roll Hall of Fame in 1989, and the UK Music Hall of Fame in 2004. In 2012, the band celebrated its 50 th anniversary.",
+        "items": []
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 8,
+      "fields": {
+        "name": "Guns N' Roses",
+        "img_url": "http://static.thetoptens.com/img/lists/590lg.jpg",
+        "info": "Guns N' Roses is an American hard rock band from Los Angeles formed in 1985. The classic lineup, as signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler.",
+        "items": [55,44,3,18,32,51]
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 9,
+      "fields": {
+        "name": "Nirvana",
+        "img_url": "http://static.thetoptens.com/img/lists/1714lg.jpg",
+        "info": "Nirvana was an American grunge band that was formed in Aberdeen, Washington in 1987. Nirvana disbanded after Kurt Cobain committed suicide in 1994. The drummer of the band, David Grohl, went on to start the Foo-Fighters, an alternative rock band.The band was comprised of Kurt Cobain(Vocals, Guitar), Dave Grohl(Drums) and Krist Novoselic(Bass).Nirvana is most well - known for their album 'Nevermind' and their song 'Smells Like Teen Spirit'.The band is known for being one of the most influential bands of all time.Together with Soundgarden, Pearl Jam and Alice In Chains, the band is part of the Big 4 of Grunge.",
+        "items": [8,6,15,12,38,46,19,24,28]
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 10,
+      "fields": {
+        "name": "The Who",
+        "img_url": "http://static.thetoptens.com/img/lists/1715lg.jpg",
+        "info": "The Who is English hard rock band formed in London, England in 1964. The members are Roger Daltrey (lead singer), Pete Townshend (guitarist), John Entwistle (bassist), and Keith Moon (drums). The genres they were associated with happened to be rock, soft rock, hard rock, and soul rock. They are best known for their live performances and hit songs Baba O'Riley, My Generation, and Won't Get Fooled Again. Some noted achievements were their rock operas, Tommy (album), Quadrophenia (album), and A Quick One, While He's Away (song). The Who still plays today, yet sadly, Keith Moon died in 1978 due to a accidental prescription pill overdose at the age of 32. His best friend, John Entwistle, soon followed.Entwistle died of a cocaine overdose in 2002 at the age of 57. Later, Townshend was accused of buying child pornography, but was proven innocent.Overall, in the end, The Who has contained some of the most influential talent in rock history with some of the most impressive instrumental skills, and manage to be a iconic mark in rock n roll to this day.",
+        "items": []
+      }
+    },
+    {
+      "model": "bands.band",
+      "pk": 11,
+      "fields": {
+        "name": "Black Sabbath",
+        "img_url": "http://rockandrollarmy.com/magazine/images/stories/2015/marzo/black_sabbath_logo.jpg",
+        "info": "Black Sabbath are an English rock band, formed in Birmingham in 1968, by guitarist and main songwriter Tony Iommi, bassist and main lyricist Geezer Butler, singer Ozzy Osbourne, and drummer Bill Ward. The band have since experienced multiple line-up changes, with guitarist Iommi being the only constant presence in the band through the years. Originally formed as a blues rock band, the group soon adopted the Black Sabbath moniker and began incorporating occult themes with horror-inspired lyrics and tuned-down guitars. Despite an association with these two themes, Black Sabbath also composed songs dealing with social instability, political corruption, the dangers of drug abuse and apocalyptic prophecies of the horrors of war.",
+        "items": [8,6,15,45,32,19,24,28]
+      }
+    }
+  ]
