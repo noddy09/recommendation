@@ -6,13 +6,16 @@
     <div class="">
         <div class="col-sm-3" style="float: left;">
             <div>
-                <div>
-                    Preferred Bands:
+                <div style="padding-left: 20px;">
+                    <h2>Preferred Bands:</h2>
+                    <div id="resize_pBSlide" style="width: 50%; height: 10px; background-color:cyan;">
+                    </div>
+                    <span> {{pbands.length}} of {{allBands.length}}</span>
                 </div>
                 <div style="padding-top: 20px;">
                     <div>
                         <ul style="list-style-type:none; padding-left: 15px; width: 80%;">
-                            <li style="margin-top: 10px;" *ngFor="let band of bands">
+                            <li style="margin-top: 10px;" *ngFor="let band of pbands">
                                 <div style="padding-bottom: 4px;" id="p_band{{band.id}}"> {{band.name}}</div>
                                 <input id="p_band{{band.id}}_items" type="text" value="{{band.items}}" hidden="true" />
                             </li>
@@ -23,8 +26,11 @@
         </div>
         <div class="col-sm-3" style="float: left;">
             <div>
-                <div>
-                    Items used:
+                <div style="padding-left: 20px;">
+                    <h2>Items used:</h2>
+                    <div id="resize_iSlide" style="width: 50%; height: 10px; background-color:cyan;">
+                    </div>
+                    <span> {{items.length}} of {{allItems.length}}</span>
                 </div>
                 <div style="padding-top: 20px;">
                     <div>
@@ -40,13 +46,16 @@
         </div>
         <div class="col-sm-3" style="float: left;">
             <div>
-                <div>
-                    Recommended Bands:
+                <div style="padding-left: 20px;">
+                    <h2>Recommended Bands:</h2>
+                    <div id="resize_rBSlide" style="width: 50%; height: 10px; background-color:cyan;">
+                    </div>
+                    <span> {{rbands.length}} of {{allBands.length}}</span>
                 </div>
                 <div style="padding-top: 20px;">
                     <div>
                         <ul style="list-style-type:none; padding-left: 15px; width: 80%;">
-                            <li style="margin-top: 10px;" *ngFor="let band of bands">
+                            <li style="margin-top: 10px;" *ngFor="let band of rbands">
                                 <div style="padding-bottom: 4px;" id="r_band{{band.id}}"> {{band.name}}</div>
                                 <input id="r_band{{band.id}}_items" type="text" value="{{band.items}}" hidden="true" />
                             </li>

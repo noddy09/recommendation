@@ -11,7 +11,8 @@ declare let d3: any;
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit, AfterViewInit {
-  bands: any;
+  pbands: any;
+  rbands: any;
   items: any;
   allBands: any;
   allItems: any;
@@ -21,17 +22,62 @@ export class MainComponent implements OnInit, AfterViewInit {
   constructor(httpService: HttpService) {
     this.allBands = []
     this.allItems = []
-    this.bands = []
+    this.pbands = []
+    this.rbands = []
     this.items = []
     this.selectedBand = false;
-
+    var $scope = this
     httpService.get("http://localhost:8000/rest/v1/band/").subscribe(data => {
-      this.bands = data
-      this.ngAfterViewInit()
+      $scope.allBands = data
+      $scope.pbands = data
+      $scope.rbands = data
+      console.log($scope.allBands)
+      console.log($scope)
+      $scope.ngAfterViewInit()
+
+      $("#resize_pBSlide").not("input").slider({
+        orientation: "horizontal",
+        range: "min",
+        max: $scope.allBands.length,
+        value: $scope.allBands.length,
+        min: 1,
+        step: 1,
+        slide: function (event: any, ui: any) {
+          $scope.pbands = $scope.allBands.slice(0, ui.value)
+          $scope.ngAfterViewInit()
+        }
+      })
+
+      $("#resize_rBSlide").not("input").slider({
+        orientation: "horizontal",
+        range: "min",
+        max: $scope.allBands.length,
+        value: $scope.allBands.length,
+        min: 1,
+        step: 1,
+        slide: function (event: any, ui: any) {
+          $scope.rbands = $scope.allBands.slice(0, ui.value)
+          $scope.ngAfterViewInit()
+        }
+      })
     })
+
     httpService.get("http://localhost:8000/rest/v1/item/").subscribe(data => {
-      this.items = data
-      this.ngAfterViewInit()
+      $scope.allItems = data
+      $scope.items = data
+      $scope.ngAfterViewInit()
+      $("#resize_iSlide").not("input").slider({
+        orientation: "horizontal",
+        range: "min",
+        max: $scope.allItems.length,
+        value: $scope.allItems.length,
+        min: 1,
+        step: 1,
+        slide: function (event: any, ui: any) {
+          $scope.items = $scope.allItems.slice(0, ui.value)
+          $scope.ngAfterViewInit()
+        }
+      })
     })
   }
 
@@ -45,7 +91,7 @@ export class MainComponent implements OnInit, AfterViewInit {
     var selected_value = ui.value
     var selected_items = $("#" + event.target.id.toString() + "_items").val()
     var band_id = event.target.id.toString().slice(6)
-    $scope.selectedBand = this.bands.find((ele: any) => ele.id == band_id)
+    $scope.selectedBand = this.pbands.find((ele: any) => ele.id == band_id)
     var slide_items = $scope.selectedBand.items
     var x = $("#p_i").width()
     var html = '<svg width=' + x + ' height=' + $("#p_i").height() + '>'
@@ -98,7 +144,32 @@ export class MainComponent implements OnInit, AfterViewInit {
 
   }
 
+  r_band_slide(event: any, ui: any){
+    var piTop = $("[id^=p_item").first().position().top - $("#i_r").position().top
+    var startY = $("#" + event.target.id.toString()).offset().top - $("#i_r").position().top - piTop + 15
+    var $scope = this
+    var selected_value = ui.value
+    var selected_items = $("#" + event.target.id.toString() + "_items").val()
+    var band_id = event.target.id.toString().slice(6)
+    $scope.selectedBand = this.rbands.find((ele: any) => ele.id == band_id)
+    var slide_items = $scope.selectedBand.items
+    var x = $("#i_r").width()
+    var html = '<svg width=' + x + ' height=' + $("#i_r").height() + '>'
+    slide_items.forEach((element: any) => {
+      $("#p_item" + element.toString()).slider('value', selected_value)
+      var y = $("#p_item" + element.toString()).position().top - $("#i_r").position().top - piTop + 15
+      var cords = "20," + y.toString() + " 0," + y.toString()
+      html = html + '<polyline fill="none" points="' + x.toString() + ',' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+    });
+    html = html + "<svg>"
+    $("#i_r").html(html)
+    $("#p_band" + $scope.selectedBand.id.toString()).slider('value', selected_value)
+    $("#p_i").html("")
+  }
+
   ngAfterViewInit() {
+    $("#i_r").html("")
+    $("#p_i").html("")
     var $scope = this
     // prefferred bands slider
     $(document).ready(function () {
@@ -141,8 +212,7 @@ export class MainComponent implements OnInit, AfterViewInit {
         value: 50,
         min: 10,
         slide: function (event: any, ui: any) {
-          var selected_value = ui.value
-          var selected_items = $("#" + event.target.id.toString() + "_items").val()
+          $scope.r_band_slide(event, ui)
         }
       })
       document.querySelectorAll('.ui-slider-handle').forEach(function (a) {
