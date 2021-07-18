@@ -7,6 +7,7 @@ from .models import Band
 
 
 class BandSerializer(serializers.Serializer):
+    id = serializers.IntegerField()
     name = serializers.CharField()
     img_url = serializers.URLField()
     info = serializers.CharField()

@@ -1,0 +1,18 @@
+.ui-slider {
+    padding-left: 5px;
+    height: 30px;
+}
+.ui-widget-header{
+    background-image:none !important;
+    background-color:#fc3200 !important;
+    opacity: 0.2 !important;
+}
+.card-content{
+    overflow: auto;
+    /* height: 600px; */
+}
+
+.svg {
+    position: absolute;
+    z-index: 2000;
+}

@@ -1,40 +1,72 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm">
-            <mat-card>
-                <mat-card-title>
+<div class="">
+    <div id="p_i" style="position: absolute; z-index: 2000;">
+    </div>
+    <div id="i_r" style="position: absolute; z-index: 2000;">
+    </div>
+    <div class="">
+        <div class="col-sm-3" style="float: left;">
+            <div>
+                <div>
                     Preferred Bands:
-                </mat-card-title>
-                <mat-card-content>
-                </mat-card-content>
-            </mat-card>
+                </div>
+                <div style="padding-top: 20px;">
+                    <div>
+                        <ul style="list-style-type:none; padding-left: 15px; width: 80%;">
+                            <li style="margin-top: 10px;" *ngFor="let band of bands">
+                                <div style="padding-bottom: 4px;" id="p_band{{band.id}}"> {{band.name}}</div>
+                                <input id="p_band{{band.id}}_items" type="text" value="{{band.items}}" hidden="true" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm">
-            <mat-card>
-                <mat-card-title>
+        <div class="col-sm-3" style="float: left;">
+            <div>
+                <div>
                     Items used:
-                </mat-card-title>
-                <mat-card-content>
-                </mat-card-content>
-            </mat-card>
+                </div>
+                <div style="padding-top: 20px;">
+                    <div>
+                        <ul style="list-style-type:none; padding-left: 15px; width: 80%;">
+                            <li style="margin-top: 10px;" *ngFor="let item of items">
+                                <div style="padding-bottom: 4px;" id="p_item{{item.id}}"> {{item.name}}</div>
+                                <input id="p_item{{item.id}}_items" type="text" value="{{item.bands}}" hidden="true" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm">
-            <mat-card>
-                <mat-card-title>
+        <div class="col-sm-3" style="float: left;">
+            <div>
+                <div>
                     Recommended Bands:
-                </mat-card-title>
-                <mat-card-content>
-                </mat-card-content>
-            </mat-card>
+                </div>
+                <div style="padding-top: 20px;">
+                    <div>
+                        <ul style="list-style-type:none; padding-left: 15px; width: 80%;">
+                            <li style="margin-top: 10px;" *ngFor="let band of bands">
+                                <div style="padding-bottom: 4px;" id="r_band{{band.id}}"> {{band.name}}</div>
+                                <input id="r_band{{band.id}}_items" type="text" value="{{band.items}}" hidden="true" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm">
+        <div class="col-sm-3" style="float: left;">
             <mat-card>
-                <mat-card-title>
-                    Band Name
-                </mat-card-title>
-                <mat-card-content>
-                </mat-card-content>
+                <div *ngIf="selectedBand">
+                    <mat-card-title>
+                        {{selectedBand.name}}
+                    </mat-card-title>
+                    <img src="{{selectedBand.img_url}}" class="mat-card-image">
+                    <mat-card-content class="card-content">
+                        {{selectedBand.info}}
+                    </mat-card-content>
+                </div>
             </mat-card>
-        </div>
+        </div> 
     </div>
 </div>
