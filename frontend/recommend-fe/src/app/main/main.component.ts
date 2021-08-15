@@ -96,10 +96,12 @@ export class MainComponent implements OnInit, AfterViewInit {
     var x = $("#p_i").width()
     var html = '<svg width=' + x + ' height=' + $("#p_i").height() + '>'
     slide_items.forEach((element: any) => {
-      $("#p_item" + element.toString()).slider('value', selected_value)
-      var y = $("#p_item" + element.toString()).position().top - $("#p_i").position().top - piTop + 15
-      var cords = (x - 20).toString() + "," + y.toString() + " " + x.toString() + "," + y.toString()
-      html = html + '<polyline fill="none" points="0,' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+      if($("#p_item" + element.toString()).length == 1){
+        $("#p_item" + element.toString()).slider('value', selected_value)
+        var y = $("#p_item" + element.toString()).position().top - $("#p_i").position().top - piTop + 15
+        var cords = (x - 20).toString() + "," + y.toString() + " " + x.toString() + "," + y.toString()
+        html = html + '<polyline fill="none" points="0,' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+      }
     });
     html = html + "<svg>"
     $("#p_i").html(html)
@@ -120,10 +122,12 @@ export class MainComponent implements OnInit, AfterViewInit {
     var x = $("#p_i").width()
     var html = '<svg width=' + x + ' height=' + $("#p_i").height() + '>'
     slide_bands.forEach((element: any) => {
-      $("#p_band" + element.toString()).slider('value', selected_value)
-      var y = $("#p_band" + element.toString()).position().top - $("#p_i").position().top - piTop + 15
-      var cords = "20," + y.toString() + " 0," + y.toString()
-      html = html + '<polyline fill="none" points="' + x.toString() + ',' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+      if($("#p_band" + element.toString()).length == 1){
+        $("#p_band" + element.toString()).slider('value', selected_value)
+        var y = $("#p_band" + element.toString()).position().top - $("#p_i").position().top - piTop + 15
+        var cords = "20," + y.toString() + " 0," + y.toString()
+        html = html + '<polyline fill="none" points="' + x.toString() + ',' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+      }
     });
     html = html + "<svg>"
     $("#p_i").html(html)
@@ -133,10 +137,12 @@ export class MainComponent implements OnInit, AfterViewInit {
     x = $("#i_r").width()
     html = '<svg width=' + x + ' height=' + $("#i_r").height() + '>'
     slide_bands.forEach((element: any) => {
-      $("#r_band" + element.toString()).slider('value', selected_value)
-      var y = $("#r_band" + element.toString()).position().top - $("#i_r").position().top - piTop + 15
-      var cords = (x - 20).toString() + "," + y.toString() + " " + x.toString() + "," + y.toString()
-      html = html + '<polyline fill="none" points="0,' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+      if($("#r_band" + element.toString()).length == 1){
+        $("#r_band" + element.toString()).slider('value', selected_value)
+        var y = $("#r_band" + element.toString()).position().top - $("#i_r").position().top - piTop + 15
+        var cords = (x - 20).toString() + "," + y.toString() + " " + x.toString() + "," + y.toString()
+        html = html + '<polyline fill="none" points="0,' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+      }
     });
     html = html + "<svg>"
     $("#i_r").html(html)
@@ -156,10 +162,12 @@ export class MainComponent implements OnInit, AfterViewInit {
     var x = $("#i_r").width()
     var html = '<svg width=' + x + ' height=' + $("#i_r").height() + '>'
     slide_items.forEach((element: any) => {
-      $("#p_item" + element.toString()).slider('value', selected_value)
-      var y = $("#p_item" + element.toString()).position().top - $("#i_r").position().top - piTop + 15
-      var cords = "20," + y.toString() + " 0," + y.toString()
-      html = html + '<polyline fill="none" points="' + x.toString() + ',' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+      if($("#p_item" + element.toString()).length == 1){
+        $("#p_item" + element.toString()).slider('value', selected_value)
+        var y = $("#p_item" + element.toString()).position().top - $("#i_r").position().top - piTop + 15
+        var cords = "20," + y.toString() + " 0," + y.toString()
+        html = html + '<polyline fill="none" points="' + x.toString() + ',' + startY.toString() + ' ' + cords + '" stroke="green"/>'
+      }
     });
     html = html + "<svg>"
     $("#i_r").html(html)
